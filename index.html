@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación de vínculos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="back">
+
+        <header>
+            <h1>SEO</h1>
+        </header>
+
+        <div class="contenedor">
+            <section>
+                <article>
+                    <h2>Verificación de vínculos</h2>
+                    <p>Googlebot navega de una URL a otra mediante la
+                        recuperación y el análisis de vínculos, mapas del
+                        sitio y redireccionamientos. Además, considera cada
+                        URL como la primera y única URL que ha visto de tu
+                        sitio. Para asegurarte de que Googlebot encuentre
+                        todas las URLs en tu sitio, haz lo siguiente:</p>
+
+
+                    <p>Usa elementos <span>&lt;a&gt;</span>
+                        que Google pueda rastrear. Asegúrate de que
+                        sea posible acceder a todas las páginas del
+                        sitio con un vínculo en otra página que se
+                        pueda encontrar. Asegúrate de que el
+                        vínculo de referencia incluya texto o, en
+                        el caso de las imágenes, un atributo
+                        <span>&lt;alt&gt;</span>
+                        relevante para la página de destino.
+                    </p>
+                </article>
+
+                <article>
+                    <div class="listContainer">
+                        <div class="column">
+                            <h2>Recomendado</h2>
+                            <dl>
+                                <dt>&lt;a href="https://example.com"></dt>
+                                <dd>Google solo puede rastrear tu enlace si se trata de un elemento HTML &lt;a> con un
+                                    atributo href</dd>
+                                <dt>&lt;a href="/products.php?id=123"></dt>
+                                <dd>Asegúrate de que la URL del elemento &lt;a> se resuelva como una dirección web real
+                                </dd>
+                                <dt>&lt;a href="https://example.com">texto del enlace &lt;/a></dt>
+                                <dd>Coloca el texto del enlace entre elementos &lt;a> para que Google pueda rastrearlo
+                                </dd>
+                                <dt>&lt;a href="https://example.com">Biblitografía completa&lt;/a></dt>
+                                <dd>El texto del enlace debe ser descriptivo y relevante</dd>
+                                <dt>&lt;a href="https://example.com">El quijote&lt;/a></dt>
+                                <dd>El texto del mensaje debe ser conciso</dd>
+                                <dt>&lt;a href="https://example.com/page1">seccion 1&lt;/a>
+                                    texto entre enlaces ... <br>
+                                    &lt;a href="https://example.com/page1">seccion 2&lt;/a>
+                                    texto entre enlaces ... <br>
+                                    &lt;a href="https://example.com/page1">seccion 3&lt;/a>
+                                    texto entre enlaces ...
+                                </dt>
+                                <dd>Enlaces separados por texto y en contexto</dd>
+                            </dl>
+                        </div>
+
+                        <div class="column">
+                            <h2>No recomendado</h2>
+                            <dl class="red">
+                                <dt>&lt;span href="https://example.com"></dt>
+                                <dd>Si no hay etiqueta &lt;a> no podrá rastrearlo, aunque exista el atributo href en
+                                    cualquier otro lemnto HTML</dd>
+                                <dt>&lt;a href="javascript:goTo('products')"></dt>
+                                <dd>Si la URL no es una dirección como tal, no será indexada</dd>
+                                <dt>&lt;a href="https://example.com">&lt;/a></dt>
+                                <dd>Google puede usar el atributo title como texto del enlace si el elemento &lt;a> está
+                                    vacío</dd>
+                                <dt>&lt;a href="https://example.com">Más información&lt;/a></dt>
+                                <dd>El texto del enlace es totalmente generico</dd>
+                                <dt>&lt;a href="https://example.com">
+                                    En un lugar de la Mancha, de cuyo nombre no quiero acordarme,
+                                    no ha mucho tiempo que vivía un ...&lt;/a></dt>
+                                <dd>El texto del enlace es excesivamente largo</dd>
+                                <dt>&lt;a href="https://example.com/page1">1&lt;/a>
+                                    &lt;a href="https://example.com/page1">2&lt;/a>
+                                    &lt;a href="https://example.com/page1">3&lt;/a>
+                                    &lt;a href="https://example.com/page1">4&lt;/a>
+                                    &lt;a href="https://example.com/page1">5&lt;/a></dt>
+                                    <dd>No hay contexto y es totalmente genérico</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
